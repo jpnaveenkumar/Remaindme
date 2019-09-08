@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    tools:context="com.example.naveen.remaindme.ActionActivity">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/roundborder"
+        android:src="@drawable/alarm" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout">
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/snooze"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_width="250dp"
+        android:layout_marginTop="60dp"
+        app:inner_text="Drag to snooze"
+        app:button_background="@drawable/roundborder"
+        app:button_image_enabled="@drawable/alarmoff"
+        app:button_image_disabled="@drawable/snooze"
+        app:button_left_padding="20dp"
+        app:button_bottom_padding="20dp"
+        app:button_top_padding="20dp"
+        app:button_right_padding="20dp"
+        app:inner_text_top_padding="20dp"
+        app:inner_text_bottom_padding="20dp"
+
+        />
+
+        <com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/end"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:inner_text="Drag to End Alert"
+            app:button_background="@drawable/roundborder"
+            app:button_image_enabled="@drawable/snooze"
+            app:button_image_disabled="@drawable/alarmoff"
+            app:button_left_padding="20dp"
+            app:button_right_padding="20dp"
+            app:button_top_padding="20dp"
+            app:button_bottom_padding="20dp"
+            app:inner_text_top_padding="20dp"
+            app:inner_text_bottom_padding="20dp"
+            app:inner_text_color="@color/white"
+            />
+    </LinearLayout>
+</RelativeLayout>

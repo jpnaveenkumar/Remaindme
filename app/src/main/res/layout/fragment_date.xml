@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.naveen.remaindme.DateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="Click Here To Pick Time"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/clock"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="110dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="109dp"
+        android:hint=""
+        android:id="@+id/time2"
+        android:textStyle="bold"
+        android:textSize="4mm"
+        />
+
+    <Button
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="159dp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:text="Click Here To Pick Date"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/calendar"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="240dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="239dp"
+        android:hint="MM/DD/YYYY"
+        android:id="@+id/time3"
+        android:textStyle="bold"
+        android:textSize="4mm"
+        />
+
+</FrameLayout>

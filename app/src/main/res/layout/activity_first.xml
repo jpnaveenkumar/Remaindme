@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:context="com.example.naveen.remaindme.FirstActivity">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Remainder name"
+            android:id="@+id/name1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Description . . ."
+            android:lines="5"
+            android:id="@+id/desc"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            />
+
+        <RadioGroup
+            android:id="@+id/type"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/daily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="true"
+                android:text="Daily" />
+
+            <RadioButton
+                android:id="@+id/Specific_Date"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="Specific Date" />
+
+            <RadioButton
+                android:id="@+id/frequency"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency" />
+
+        </RadioGroup>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/place"
+            android:name="com.example.naveen.remaindme.DailyFragment"
+            android:layout_height="wrap_content">
+
+        </fragment>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save Remainder"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:shadowRadius="5"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/save"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+        </Button>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
